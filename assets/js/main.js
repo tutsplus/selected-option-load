@@ -21,8 +21,8 @@ for(const option of options) {
 /*select.addEventListener("change", function() {
 	const url = this.options[this.selectedIndex].dataset.url;
 	if(url) {
-		location.href = url;
 		localStorage.setItem("url", url);
+		location.href = url;
 	}
 });
 
