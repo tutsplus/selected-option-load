@@ -12,7 +12,7 @@ select.addEventListener("change", function() {
 for(const option of options) {
   const url = option.dataset.url;
   if(location.href.includes(url)) {
-    option.setAttribute("selected", true);
+    option.setAttribute("selected", "");
     break;
   }
 }
@@ -30,7 +30,7 @@ if(localStorage.getItem("url")) {
   for(const option of options) {
     const url = option.dataset.url;
     if(url === localStorage.getItem("url")) {
-      option.setAttribute("selected", true);
+      option.setAttribute("selected", "");
       break;
     }
   }
